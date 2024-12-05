@@ -50,5 +50,5 @@ pub fn day3(args: &[String]) {
         }
         _ => unreachable!(),
     });
-    println!("Part 2: {:?}", part2);
+    println!("Part 2: {}", part2);
 }
