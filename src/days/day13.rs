@@ -1,3 +1,4 @@
+use approx::relative_eq;
 use itertools::iproduct;
 use lstsq;
 use nalgebra::{self as na, OMatrix, OVector, U2};
@@ -99,7 +100,8 @@ impl Claw {
             let (a, b) = (results.solution[0], results.solution[1]);
             // valid solutions should be basically be integer values, if they are not
             // then it is not a valid solution.
-            if (a.fract() < 0.001 || a.fract() > 0.999) && (b.fract() < 0.001 || b.fract() > 0.999)
+            if relative_eq!(a.round(), a, epsilon = 0.001)
+                && relative_eq!(b.round(), b, epsilon = 0.001)
             {
                 return Some(tokens((a.round() as usize, b.round() as usize)));
             }
