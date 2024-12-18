@@ -295,7 +295,7 @@ pub fn day15(args: &[String]) {
     moves.iter().for_each(|m| {
         warehouse2.step(*m);
     });
-    // print_warehouse(&warehouse2.map, warehouse2.robot);
+    print_warehouse(&warehouse2.map, warehouse2.robot);
     println!("Part 2: {}", warehouse2.gps_sum());
 }
 
