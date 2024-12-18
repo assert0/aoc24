@@ -29,7 +29,7 @@ fn main() {
         "day15" => days::day15::day15(dayargs),
         "day16" => days::day16::day16(dayargs),
         "day17" => days::day17::day17(dayargs),
-        //"day18" => days::day18::day18(dayargs),
+        "day18" => days::day18::day18(dayargs),
         //"day19" => days::day19::day19(dayargs),
         //"day20" => days::day20::day20(dayargs),
         //"day21" => days::day21::day21(dayargs),
