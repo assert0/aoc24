@@ -36,7 +36,7 @@ fn main() {
         "day22" => days::day22::day22(dayargs),
         "day23" => days::day23::day23(dayargs),
         //"day24" => days::day24::day24(dayargs),
-        //"day25" => days::day25::day25(dayargs),
+        "day25" => days::day25::day25(dayargs),
         _ => {
             println!("Unknown day: {}", day);
         }
